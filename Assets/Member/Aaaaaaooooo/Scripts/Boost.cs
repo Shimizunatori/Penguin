@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Boost : MonoBehaviour
 {
-    [SerializeField] private float Boostzone;
-    [SerializeField] private string Tag;
+    [SerializeField]
+    private float Boostzone;
+    [SerializeField]
+    private string Tag;
 
     // Start is called before the first frame update
     void Start()

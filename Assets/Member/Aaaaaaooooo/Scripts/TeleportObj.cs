@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class TeleportObj : MonoBehaviour
 {
-    [SerializeField] private Transform teleportTarget;
-    [SerializeField] private string targetTag;
+    [SerializeField]
+    private Transform teleportTarget;
+    [SerializeField]
+    private string targetTag;
 
 
     // Start is called before the first frame update
