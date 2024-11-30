@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fade
+  - Floor
+  - Enemy
+  - Conf
+  - Lock
+  - Pen
   layers:
   - Default
   - TransparentFX

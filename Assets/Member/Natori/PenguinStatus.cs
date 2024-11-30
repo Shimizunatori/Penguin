@@ -7,11 +7,19 @@ public class PenguinStatus : MonoBehaviour
     [SerializeField]
     public int _hp; // _hpÇÕÉoÉEÉìÉXÇÃâÒêî
     public bool moveFlag;
+    [SerializeField]
+    private GameObject _outPen;
+    [SerializeField]
+    private GameObject _inPen;
+    [SerializeField]
+    private GameObject _outGate;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        _outPen.gameObject.SetActive(true);
+        _inPen.gameObject.SetActive(false);
+        _outGate.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,24 +33,19 @@ public class PenguinStatus : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Floor"))
+        if (other.gameObject.CompareTag("Lock"))
         {
             _hp--;
         }
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            _hp = 0;
-        }
-        if (other.gameObject.CompareTag("Conf"))
-        {
-            if (moveFlag == true)
-            {
-                gameObject.SetActive(false);
-            }
-            else
-            {
+    }
 
-            }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Pen"))
+        {
+            _outPen.gameObject.SetActive(false);
+            _inPen.gameObject.SetActive(true);
+            _outGate.gameObject.SetActive(true);
         }
     }
 }
