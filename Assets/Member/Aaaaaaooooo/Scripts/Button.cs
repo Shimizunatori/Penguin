@@ -12,7 +12,12 @@ public class Button : MonoBehaviour
 
     public void OnStage1Clicked()
     {
-        FadeManager.Instance.FadeToScene("Stage1");
+        FadeManager.Instance.FadeToScene("Main");
+    }
+
+    public void OnStage2Clicked()
+    {
+        FadeManager.Instance.FadeToScene("Stage2");
     }
 
     public void OnTitleBackClicked()
