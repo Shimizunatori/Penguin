@@ -2519,6 +2519,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: clearzone
       objectReference: {fileID: 0}
+    - target: {fileID: 4810891711140957053, guid: ad27b82b1d61d644589c509297f2eea2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7707827492136542272, guid: ad27b82b1d61d644589c509297f2eea2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.341382
@@ -2746,6 +2750,7 @@ MonoBehaviour:
   _outPen: {fileID: 431222598}
   _inPen: {fileID: 309924809}
   _outGate: {fileID: 1334461225}
+  _inGate: {fileID: 1834853442}
 --- !u!114 &1770161840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2758,7 +2763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d11e4f6f6ff5cdc41a79e365023272a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 200
+  speed: 300
   maxLine: 0
   lineRen: {fileID: 0}
   wall:
@@ -3040,6 +3045,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 808d5d725e89ab54c8626db94e70f862, type: 3}
+--- !u!1 &1834853442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4050840675854240811, guid: 808d5d725e89ab54c8626db94e70f862, type: 3}
+  m_PrefabInstance: {fileID: 1834853441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1883567385
 GameObject:
   m_ObjectHideFlags: 0

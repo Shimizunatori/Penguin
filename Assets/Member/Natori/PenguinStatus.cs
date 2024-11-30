@@ -13,6 +13,8 @@ public class PenguinStatus : MonoBehaviour
     private GameObject _inPen;
     [SerializeField]
     private GameObject _outGate;
+    [SerializeField]
+    private GameObject _inGate;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class PenguinStatus : MonoBehaviour
         _outPen.gameObject.SetActive(true);
         _inPen.gameObject.SetActive(false);
         _outGate.gameObject.SetActive(false);
+        _inGate.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -46,6 +49,7 @@ public class PenguinStatus : MonoBehaviour
             _outPen.gameObject.SetActive(false);
             _inPen.gameObject.SetActive(true);
             _outGate.gameObject.SetActive(true);
+            _inGate.gameObject.SetActive(true);
         }
     }
 }
