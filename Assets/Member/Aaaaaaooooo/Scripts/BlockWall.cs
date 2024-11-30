@@ -14,6 +14,7 @@ public class BlockWall : MonoBehaviour
     [SerializeField]
     private AudioSource audioSource;
 
+
     private void Start()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -32,4 +33,5 @@ public class BlockWall : MonoBehaviour
             audioSource.PlayOneShot(lockSE);
         }
     }
+
 }
